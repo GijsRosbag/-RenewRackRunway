@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  background: black;
+  min-height: 200vh;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lijn {
+  color: white;
+}
+
+.headerWrapper {
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(128, 0, 128, 0.3)), black;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.navUl {
+  display: flex;
+  gap: 30px;
+  padding-right: 50px;
+}
+
+.navLi {
+  list-style: none;
+}
+.navLi a {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4e4e4;
+}
+
+.logotext {
+  font-weight: 400;
+}
+
+.hero {
+  height: 85vh;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9), rgba(0, 0, 0, 0.3), rgba(128, 0, 128, 0.3)), url("/img/hero.jpeg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 300%;
+  font-weight: 400;
+}
+
+.heading2 {
+  font-weight: 400;
+  font-size: 200%;
+}
+
+.cta {
+  background: #14893b;
+  border: none;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  padding: 20px 40px;
+  border-bottom: 5px solid #0e5c28;
+  color: white;
+  transition: 0.15s all;
+  width: 220px;
+  height: 75px;
+}
+
+.cta:hover {
+  cursor: pointer;
+}
+
+.cta:active {
+  background-color: #0f6a2e;
+  border-bottom: 5px solid transparent;
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+    font-size: 80%;
+  }
+  .navUl {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+  }
+  .title {
+    position: relative;
+    font-size: 350%;
+    left: auto;
+    top: auto;
+    text-align: center;
+  }
+  .cta {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.waarom-wij-over-ons {
+  display: flex;
+  color: black;
+  background-color: white;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9));
+}
+
+.waarom-wij-text {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.waarom-wij-afbeelding {
+  height: 500px;
+  width: 50%;
+}
+
+.waarom-wij-afbeelding img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paragraaf {
+  max-width: 50ch;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .heading2 {
+    font-size: 250%;
+  }
+  .waarom-wij-over-ons {
+    flex-direction: column;
+  }
+  .waarom-wij-afbeelding, .waarom-wij-text {
+    width: 100%;
+  }
+}
+.onze-stappen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9), rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8));
+}
+
+.stappen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stap {
+  width: 800px;
+  background: white;
+  list-style: none;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  gap: 10px;
+  height: 300px;
+}
+
+.stap img {
+  height: 100%;
+  width: 30%;
+  object-position: top;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.stap div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heading3 {
+  font-size: 150%;
+}
+
+.abbonomenten-sectie {
+  min-height: 1000px;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9), rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.abbonomenten {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 60px;
+}
+
+.abbonoment {
+  height: 600px;
+  width: 400px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.info {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+}
+
+.abbonoment .wrapper {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.point {
+  border-bottom: 2px solid rgba(0, 0, 255, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+}
+
+.point2 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+}
+
+.point3 {
+  border-bottom: 2px solid rgba(128, 0, 128, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+}
+
+.notice-me2 {
+  background: lightgreen;
+}
+
+@media screen and (max-width: 1200px) {
+  .abbonomenten {
+    flex-direction: column;
+  }
+}
+.review-sectie {
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9), rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8));
+}
+
+.reviews {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 60px;
+}
+
+.review {
+  height: 340px;
+  width: 400px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.customer {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews {
+    flex-direction: column;
+  }
+}
+.contact-sectie {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9), rgba(0, 0, 0, 0.3), rgba(128, 0, 128, 0.3)), url("/img/pexels-negative-space-33999.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 1000px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  gap: 20px;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input:not(.cta), .contact textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  padding: 2rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  resize: none;
+}
+
+.contact input:focus, .contact textarea:focus {
+  outline: 1px solid black;
+}
+
+.email-contact {
+  padding-bottom: 20px;
+}
+
+.vraag-opmerking {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-sectie {
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact {
+    width: 100%;
+    padding: 40px;
+  }
+}
+.footer {
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.3), rgba(0, 0, 0, 0.3), rgba(128, 0, 128, 0.3)), black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .logo {
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.impact {
+  display: flex;
+  color: black;
+  background-color: white;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.9));
+}
+
+.impact-text {
+  height: 500px;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.impact-afbeelding {
+  height: 500px;
+  width: 51%;
+  object-fit: cover;
+}
+
+.impact-afbeelding img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
